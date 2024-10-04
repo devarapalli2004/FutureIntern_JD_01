@@ -19,39 +19,39 @@ public class Calculator {
 
         System.out.println("Enter the operator (+,-,*,/):");
 
-        char op = sc.next().charAt(0);
-        double o = 0;
+        char operator = sc.next().charAt(0);
+        double result = 0;
 
-        switch (op) {
+        switch (operator) {
             // case to add two numbers
             case '+':
-                o = num1 + num2;
+                result = num1 + num2;
                 break;
 
             // case to subtract two numbers
             case '-':
-                o = num1 - num2;
+                result = num1 - num2;
                 break;
 
             // case to multiply two numbers
             case '*':
-                o = num1 * num2;
+                result = num1 * num2;
                 break;
 
             // case to divide two numbers
             case '/':
-                o = num1 / num2;
+                result = num1 / num2;
                 break;
 
             default:
-                System.out.println("You enter wrong input");
+                System.out.println("None");
         }
 
-        System.out.println("The final result:");
+        System.out.println("Result:");
         System.out.println();
 
         // print the final result
-        System.out.println(num1 + " " + op + " " + num2
-                + " = " + o);
+        System.out.println(num1 + " " + operator + " " + num2
+                + " = " + result);
     }
 }
